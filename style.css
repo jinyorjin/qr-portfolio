@@ -1,42 +1,61 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-  color: #333;
+  background-color: #f5f7fa;
+  color: #1e1e1e;
   line-height: 1.6;
 }
 
-header {
-  background-color: #0d1b2a;
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
-  padding: 2rem;
   text-align: center;
+  padding: 5rem 1rem 4rem;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.profile-img-large {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid white;
 }
 
-header p {
-  margin-top: 0.5rem;
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0.2rem 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background-color: #ffffff;
+  color: #0f2027;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.hero-btn:hover {
+  background-color: #c3cfe2;
 }
 
 section {
-  padding: 2rem 10%;
-}
-
-.profile-img {
-  max-width: 120px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  padding: 4rem 10%;
 }
 
 h2 {
+  font-size: 2rem;
   color: #0d1b2a;
   border-bottom: 2px solid #0d1b2a;
   padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skills ul,
@@ -48,10 +67,10 @@ h2 {
 .skills li,
 .projects li {
   background: white;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   padding: 1rem;
-  border-left: 5px solid #415a77;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #415a77;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .footer {
@@ -63,12 +82,16 @@ h2 {
 
 .qr-img {
   margin-top: 1rem;
-  width: 120px;
+  width: 100px;
 }
 
 a {
   color: #1d3557;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .fade-in {
@@ -80,4 +103,251 @@ a {
 .fade-in.appear {
   opacity: 1;
   transform: translateY(0);
+}
+.readme-btn {
+  margin-top: 1rem;
+  background-color: #415a77;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.readme-btn:hover {
+  background-color: #2b3d56;
+}
+
+#readme-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  border-left: 4px solid #415a77;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+}
+
+.readme-show {
+  display: block;
+}
+.about-section {
+  background: #f4f7fb;
+  padding: 4rem 1rem;
+}
+
+.about-card {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #0d1b2a;
+}
+
+.about-role {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.contact-list li {
+  margin: 0.6rem 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.contact-list a {
+  color: #0077b6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.readme-btn {
+  background-color: #415a77;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(65, 90, 119, 0.25);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.readme-btn:hover {
+  background-color: #2b3d56;
+  transform: translateY(-2px);
+}
+.skills {
+  padding: 4rem 10%;
+  background: #f4f7fb;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0d1b2a;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-left: 6px solid #415a77;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.skill-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.skill-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.skill-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.skill-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(65, 90, 119, 0.2);
+}
+
+.skill-card h3 {
+  color: #1d3557;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.edu-section,
+.exp-section {
+  padding: 4rem 10%;
+  background: #f9f9fb;
+}
+
+.edu-list,
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.edu-item h3,
+.exp-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1d3557;
+}
+
+.edu-sub {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.exp-item p {
+  margin: 0.5rem 0 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.exp-message {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #415a77;
+  background-color: #e7f0fa;
+  padding: 1.2rem;
+  border-left: 5px solid #0077b6;
+  border-radius: 8px;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: #0f2027;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: transparent;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-btn {
+  margin-top: 1.5rem;
+  background-color: #ffffff22;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ffffff44;
+}
+
+.hero-btn:hover {
+  background-color: #ffffff44;
 }

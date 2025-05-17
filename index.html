@@ -4,46 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eunjin Kim | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="fade-in">
-      <img src="assets/profile.jpg" alt="Eunjin Kim" class="profile-img" />
+    <div id="particles-js"></div>
+
+    <header class="hero fade-in">
       <h1>Eunjin Kim (Jin)</h1>
       <p>Full Stack Developer · JavaScript · Node.js · React</p>
+      <a href="mailto:lqye92@gmail.com?subject=Hello%20Eunjin" class="hero-btn">
+        ✉️ Contact me ↓
+      </a>
     </header>
 
-    <section id="about" class="fade-in">
-      <h2>About Me</h2>
-      <p>📍 Altona Meadows VIC 3028</p>
-      <p>📧 <a href="mailto:lqye92@gmail.com">lqye92@gmail.com</a></p>
-      <p>📞 0437 290 722</p>
-      <p>
-        🔗
-        <a
-          href="https://www.linkedin.com/in/eunjin-kim-02455a160"
-          target="_blank"
-          >LinkedIn</a
+    <section id="about" class="about-section fade-in">
+      <div class="about-card">
+        <h2>🙋‍♀️ About Me</h2>
+        <p class="about-role">Full Stack Developer based in Melbourne</p>
+        <ul class="contact-list">
+          <li>Altona Meadows VIC 3028</li>
+          <li><a href="mailto:lqye92@gmail.com">lqye92@gmail.com</a></li>
+          <li>📞0437 290 722</li>
+          <li>
+            🔗
+            <a
+              href="https://www.linkedin.com/in/eunjin-kim-02455a160"
+              target="_blank"
+              >LinkedIn</a
+            >
+            |
+            <a href="https://github.com/jinyorjin" target="_blank">GitHub</a>
+          </li>
+        </ul>
+        <a href="readme.html" target="_blank" class="readme-btn"
+          >📘 View Full README</a
         >
-        | <a href="https://github.com/jinyorjin" target="_blank">GitHub</a>
-      </p>
+      </div>
     </section>
 
     <section class="skills fade-in">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Frontend: HTML, CSS, JavaScript, React</li>
-        <li>Backend: Node.js, Express.js, REST APIs</li>
-        <li>Database: MySQL, MongoDB</li>
-        <li>Tools: Git, GitHub, VS Code, Firebase, Stripe</li>
-      </ul>
+      <h2>🛠️ Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, REST APIs</p>
+        </div>
+        <div class="skill-card">
+          <h3>Database</h3>
+          <p>MySQL, MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, Firebase, Stripe</p>
+        </div>
+      </div>
     </section>
 
-    <section class="projects fade-in">
+    <section id="education" class="fade-in edu-section">
+      <h2>🎓 Education</h2>
+      <div class="edu-list">
+        <div class="edu-item">
+          <h3>Bachelor of Computer Science</h3>
+          <span class="edu-sub">2023–2026 · Deakin University</span>
+        </div>
+        <div class="edu-item">
+          <h3>Diploma of IT</h3>
+          <span class="edu-sub">2022–2023 · GBCA</span>
+        </div>
+        <div class="edu-item">
+          <h3>Diploma of Dental Hygiene</h3>
+          <span class="edu-sub"
+            >Graduated from Ulsan College (울산과학대학교)</span
+          >
+        </div>
+        <div class="edu-item">
+          <h3>Certificate III in Dental Assisting</h3>
+          <span class="edu-sub">Completed in Australia</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="fade-in exp-section">
+      <h2>💼 Experience</h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <h3>Royal Melbourne Dental Hospital</h3>
+          <p>
+            IT-savvy Dental Assistant managing patient data (Titanium),
+            resolving admin tech issues
+          </p>
+        </div>
+        <div class="exp-item">
+          <h3>My Dental Clinic</h3>
+          <p>
+            Digital record transition, day-to-day technical support & admin
+            troubleshooting
+          </p>
+        </div>
+      </div>
+      <div class="exp-message">
+        🦷 + 💻 <strong>Fluent in both dental & coding worlds.</strong><br />
+        Always ready to build helpful tools for patients & users!
+      </div>
+    </section>
+
+    <section id="projects" class="projects fade-in">
       <h2>Projects</h2>
       <ul>
         <li>
@@ -61,59 +134,76 @@
       </ul>
     </section>
 
-    <section class="fade-in">
-      <h2>Education</h2>
-      <p>
-        <strong>Bachelor of Computer Science</strong> (2023–2026, Deakin
-        University)
-      </p>
-      <p><strong>Diploma of IT</strong> (2022–2023, GBCA)</p>
-      <p>
-        <strong>Certificate III Dental Assisting</strong> &
-        <strong>Diploma Dental Hygiene</strong>
-      </p>
-    </section>
-
-    <section class="fade-in">
-      <h2>Experience</h2>
-      <p>
-        <strong>Royal Melbourne Dental Hospital:</strong> IT-savvy Dental
-        Assistant managing patient data with Titanium, resolving admin tech
-        issues
-      </p>
-      <p>
-        <strong>My Dental Clinic:</strong> Digital record transition, day-to-day
-        technical support
-      </p>
-    </section>
-
-    <div class="footer fade-in">
+    <footer class="footer fade-in">
       <p>Scan to view this page:</p>
       <img src="assets/qr-code.png" alt="QR Code" class="qr-img" />
       <p>&copy; 2025 Eunjin Kim</p>
-    </div>
+    </footer>
 
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-      const faders = document.querySelectorAll(".fade-in");
-      const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+          opacity: { value: 0.4 },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.2,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+          },
+          modes: {
+            grab: { distance: 140, line_linked: { opacity: 0.4 } },
+            push: { particles_nb: 4 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
 
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        observer
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("appear");
-          observer.unobserve(entry.target);
+    <!-- 👇 NEW: Scroll-triggered fade-in -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll(".fade-in");
+
+        const appearOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("appear");
+            observer.unobserve(entry.target);
+          });
+        },
+        appearOptions);
+
+        faders.forEach((fader) => {
+          appearOnScroll.observe(fader);
         });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
       });
     </script>
   </body>

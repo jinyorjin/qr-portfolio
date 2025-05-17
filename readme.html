@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>README | Eunjin Kim</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to right, #f9f9fb, #e3ecf3);
+        color: #1d1d1f;
+        padding: 2rem 1rem;
+        line-height: 1.7;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
+      .profile-img {
+        display: block;
+        margin: 0 auto 2rem;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #415a77;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #0d1b2a;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        margin-top: 2rem;
+        color: #415a77;
+        font-size: 1.3rem;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 1.05rem;
+      }
+      ul {
+        padding-left: 1.5rem;
+      }
+      .back-link {
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+        color: #0077b6;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+      .lang-btn {
+        display: block;
+        margin: 0 auto 2rem;
+        background-color: #0077b6;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 999px;
+        font-weight: bold;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .lang-btn:hover {
+        background-color: #023e8a;
+      }
+      .skill-bar {
+        margin-top: 1.5rem;
+      }
+      .skill-bar span {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+      .bar {
+        background-color: #e0e0e0;
+        border-radius: 999px;
+        overflow: hidden;
+        height: 20px;
+      }
+      .fill {
+        height: 100%;
+        background: linear-gradient(to right, #00b4d8, #0077b6);
+        color: white;
+        font-size: 0.9rem;
+        line-height: 20px;
+        padding-left: 10px;
+        border-radius: 999px;
+        animation: fillGrow 1.5s ease-out forwards;
+      }
+      @keyframes fillGrow {
+        from {
+          width: 0%;
+        }
+        to {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="lang-toggle" class="lang-btn">🌏 한국어 보기</button>
+
+      <!-- English Section -->
+      <div id="english-section">
+        <img src="assets/profile.jpg" alt="Eunjin Kim" class="profile-img" />
+        <h1>Hi, I'm Eunjin 👋</h1>
+        <p>
+          I worked in the dental industry for over 10 years—helping patients,
+          managing clinical systems, and leading with empathy. After the
+          COVID-19 pandemic, I decided to explore something new and enrolled in
+          a Diploma of IT. That's when I discovered my passion for coding.
+        </p>
+        <p>
+          Now, I’m studying Full Stack Development at Deakin University. I love
+          building applications with React, Firebase, Node.js, and exploring
+          creative ways to solve real-world problems through code.
+        </p>
+
+        <h2>Why I love coding 💻</h2>
+        <p>
+          Like dentistry, coding is about solving problems and helping others. I
+          now build digital solutions instead of treating patients!
+        </p>
+
+        <h2>Fun Facts 🎯</h2>
+        <ul>
+          <li>
+            Still remember dental chart codes, but love JavaScript more now.
+          </li>
+          <li>I’m a mum, a developer, and a lifelong learner.</li>
+          <li>I love making apps beautiful and functional.</li>
+        </ul>
+
+        <h2>My Tech Preferences 💡</h2>
+        <div class="skill-bar">
+          <span>Frontend (HTML/CSS/JS/React)</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <span>API / Backend (Node.js / Firebase)</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <span>C Language</span>
+          <div class="bar"><div class="fill" style="width: 80%">80%</div></div>
+        </div>
+        <div class="skill-bar">
+          <span>Database (MongoDB / MySQL)</span>
+          <div class="bar"><div class="fill" style="width: 75%">75%</div></div>
+        </div>
+      </div>
+
+      <!-- Korean Section -->
+      <div id="korean-section" style="display: none">
+        <img src="assets/profile.jpg" alt="Eunjin Kim" class="profile-img" />
+        <h1>안녕하세요, 김은진입니다 👋</h1>
+        <p>
+          10년 넘게 치과 분야에서 근무하며 환자 관리와 진료 보조, 데이터 입력
+          등의 업무를 해왔습니다. 코로나 이후 새로운 분야에 도전하고 싶어 IT
+          디플로마 과정을 수강했고, 그 과정에서 코딩의 매력을 알게 되었습니다.
+        </p>
+        <p>
+          지금은 디킨대학교에서 컴퓨터공학 학사 과정을 밟고 있으며, React,
+          Firebase, Node.js 등을 활용해 웹 애플리케이션을 개발하고 있습니다.
+        </p>
+
+        <h2>제가 코딩을 좋아하는 이유 💻</h2>
+        <p>
+          치과 진료처럼, 코딩도 문제를 해결하고 사람들에게 도움이 되는 점이
+          매력적입니다. 이제는 환자를 직접 돕는 대신 디지털로 문제를 해결하고
+          있습니다.
+        </p>
+
+        <h2>조금 더 저에 대해 🎯</h2>
+        <ul>
+          <li>아직도 치과 코드 기억나요 😄 근데 JavaScript가 더 좋아요!</li>
+          <li>엄마이자 개발자, 그리고 평생 배우는 사람입니다.</li>
+          <li>디자인과 기능을 모두 살리는 개발을 좋아합니다.</li>
+        </ul>
+
+        <h2>기술 스택 선호도 💡</h2>
+        <div class="skill-bar">
+          <span>프론트엔드 (HTML/CSS/JS/React)</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <span>백엔드 / API (Node.js / Firebase)</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <span>C 언어</span>
+          <div class="bar"><div class="fill" style="width: 80%">80%</div></div>
+        </div>
+        <div class="skill-bar">
+          <span>데이터베이스 (MongoDB / MySQL)</span>
+          <div class="bar"><div class="fill" style="width: 75%">75%</div></div>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-link">← Back to Portfolio</a>
+    </div>
+
+    <script>
+      const btn = document.getElementById("lang-toggle");
+      const en = document.getElementById("english-section");
+      const ko = document.getElementById("korean-section");
+
+      btn.addEventListener("click", () => {
+        if (en.style.display !== "none") {
+          en.style.display = "none";
+          ko.style.display = "block";
+          btn.innerText = "🌎 English";
+        } else {
+          en.style.display = "block";
+          ko.style.display = "none";
+          btn.innerText = "🌏 한국어 보기";
+        }
+      });
+    </script>
+  </body>
+</html>
