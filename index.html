@@ -117,26 +117,78 @@
     </section>
 
     <section id="projects" class="projects fade-in">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Dev@Deakin App:</strong> React, Firebase, Stripe – Premium Q&A
-          web app with markdown editor
-        </li>
-        <li>
-          <strong>Responsive Portfolio:</strong> Clean and responsive personal
-          portfolio using React
-        </li>
-        <li>
-          <strong>E-commerce REST API:</strong> Full-featured API with
-          authentication, product and order routes
-        </li>
-      </ul>
+      <h2>🧪 Projects</h2>
+
+      <div class="project-card">
+        <img src="assets/bootcamp-thumb.png" alt="React Portfolio Project" />
+        <h3>React Portfolio Site</h3>
+        <p>Responsive single-page React application deployed via Netlify.</p>
+        <a
+          href="https://jinyorjin.github.io/2024Bootcamp/"
+          target="_blank"
+          class="project-link"
+        >
+          🔗 View Live Demo
+        </a>
+      </div>
+
+      <p class="project-intro">
+        <strong>Dev@Deakin App:</strong> React, Firebase, Stripe – Premium Q&A
+        app with markdown editor
+      </p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img
+            src="assets/FindQuestion
+.png"
+            alt="Question + Article Page"
+          />
+          <h3>Find Question + New Post System</h3>
+          <p>
+            A full-stack posting system with dynamic question submission and
+            article publishing features.
+          </p>
+          <a
+            href="https://musical-cascaron-3e37c4.netlify.app/"
+            target="_blank"
+            class="project-link"
+          >
+            🔗 View Live Demo
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/newsletter-thumb.png" alt="React Portfolio Site" />
+          <h3>React Portfolio Site</h3>
+          <p>Responsive single-page React application deployed via Netlify.</p>
+          <a
+            href="https://lambent-speculoos-3a2eb7.netlify.app/"
+            target="_blank"
+            class="project-link"
+          >
+            🔗 View Live Demo
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/Newpost.png" alt="New Post Page" />
+          <h3>New Post</h3>
+          <p>Article-based post submission form with image upload support.</p>
+          <a
+            href="https://deluxe-marshmallow-2f67db.netlify.app/"
+            target="_blank"
+            class="project-link"
+          >
+            🔗 View Live Demo
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer class="footer fade-in">
       <p>Scan to view this page:</p>
-      <img src="assets/qr-code.png" alt="QR Code" class="qr-img" />
+      <img src="assets/qr-code.jpg" alt="QR Code" class="qr-img" />
       <p>&copy; 2025 Eunjin Kim</p>
     </footer>
 
@@ -179,7 +231,7 @@
       });
     </script>
 
-    <!-- 👇 NEW: Scroll-triggered fade-in -->
+    <!-- 👇 Scroll-triggered fade-in -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const faders = document.querySelectorAll(".fade-in");
