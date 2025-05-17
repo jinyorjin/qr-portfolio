@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eunjin Kim | Full Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="fade-in">
+      <img src="assets/profile.jpg" alt="Eunjin Kim" class="profile-img" />
+      <h1>Eunjin Kim (Jin)</h1>
+      <p>Full Stack Developer · JavaScript · Node.js · React</p>
+    </header>
+
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>📍 Altona Meadows VIC 3028</p>
+      <p>📧 <a href="mailto:lqye92@gmail.com">lqye92@gmail.com</a></p>
+      <p>📞 0437 290 722</p>
+      <p>
+        🔗
+        <a
+          href="https://www.linkedin.com/in/eunjin-kim-02455a160"
+          target="_blank"
+          >LinkedIn</a
+        >
+        | <a href="https://github.com/jinyorjin" target="_blank">GitHub</a>
+      </p>
+    </section>
+
+    <section class="skills fade-in">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Frontend: HTML, CSS, JavaScript, React</li>
+        <li>Backend: Node.js, Express.js, REST APIs</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Tools: Git, GitHub, VS Code, Firebase, Stripe</li>
+      </ul>
+    </section>
+
+    <section class="projects fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Dev@Deakin App:</strong> React, Firebase, Stripe – Premium Q&A
+          web app with markdown editor
+        </li>
+        <li>
+          <strong>Responsive Portfolio:</strong> Clean and responsive personal
+          portfolio using React
+        </li>
+        <li>
+          <strong>E-commerce REST API:</strong> Full-featured API with
+          authentication, product and order routes
+        </li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2>Education</h2>
+      <p>
+        <strong>Bachelor of Computer Science</strong> (2023–2026, Deakin
+        University)
+      </p>
+      <p><strong>Diploma of IT</strong> (2022–2023, GBCA)</p>
+      <p>
+        <strong>Certificate III Dental Assisting</strong> &
+        <strong>Diploma Dental Hygiene</strong>
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2>Experience</h2>
+      <p>
+        <strong>Royal Melbourne Dental Hospital:</strong> IT-savvy Dental
+        Assistant managing patient data with Titanium, resolving admin tech
+        issues
+      </p>
+      <p>
+        <strong>My Dental Clinic:</strong> Digital record transition, day-to-day
+        technical support
+      </p>
+    </section>
+
+    <div class="footer fade-in">
+      <p>Scan to view this page:</p>
+      <img src="assets/qr-code.png" alt="QR Code" class="qr-img" />
+      <p>&copy; 2025 Eunjin Kim</p>
+    </div>
+
+    <script>
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("appear");
+          observer.unobserve(entry.target);
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>
