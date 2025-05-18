@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook | Eunjin Kim</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="guestbook-hero fade-in">
+      <h1>Leave a message for Eunjin Kim💙</h1>
+    </header>
+
+    <section id="guestbook" class="fade-in">
+      <h2>📖 Guestbook</h2>
+      <form id="guestForm">
+        <input
+          type="text"
+          id="relation"
+          placeholder="💬 How do you know Jin? Friends or Coworker?"
+          required
+        />
+        <textarea
+          id="comment"
+          placeholder="She's the best teammate I've worked with!"
+          required
+        ></textarea>
+        <button type="submit">Post Message</button>
+      </form>
+
+      <div id="postit-board" class="postit-board"></div>
+    </section>
+
+    <footer class="footer fade-in">
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

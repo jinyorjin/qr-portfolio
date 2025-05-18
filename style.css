@@ -113,19 +113,38 @@ a:hover {
   transform: translateY(0);
 }
 .readme-btn {
-  margin-top: 1rem;
-  background-color: #415a77;
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
   color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0.5rem 0 0;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .readme-btn:hover {
-  background-color: #2b3d56;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.hero-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0.5rem 0 0;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 #readme-content {
@@ -511,4 +530,118 @@ a:hover {
 
 .project-link:hover {
   background-color: #005fa3;
+}
+/* Guestbook 섹션 전체 */
+#guestbook {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #005fa3;
+}
+
+/* 제목 */
+#guestbook h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+header.guestbook-hero h1 {
+  color: #1e40af;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+.guestbook-hero p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* 입력 폼 */
+#guestForm {
+  display: flex;
+  flex-direction: column; /* ✅ 세로 정렬 유지 */
+  gap: 0.75rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#guestForm input,
+#guestForm textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: "Inter", sans-serif;
+  background-color: #fdfdfd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+#guestForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#guestForm button {
+  align-self: flex-end;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#guestForm button:hover {
+  background-color: #2563eb;
+}
+
+/* 포스트잇 보드 */
+.postit-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+/* 포스트잇 */
+.postit {
+  width: 200px;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff89c;
+  position: relative;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #444;
+}
+.delete-btn:hover {
+  color: red;
+}
+
+/* 반응형 대응 */
+@media (max-width: 600px) {
+  .postit {
+    width: 100%;
+  }
 }
