@@ -36,11 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
     postit.className = "postit";
     postit.style.backgroundColor = randomColor;
     postit.innerHTML = `
+      <button class="delete-btn">🗑</button>
       <p><strong>${relation}</strong></p>
       <p>${comment}</p>
     `;
 
-    postitBoard.prepend(postit); // 가장 위에 추가
-    guestForm.reset();
+    // 삭제 기능 추가
+    postit.querySelector(".delete-btn").addEventListener("click", () => {
+      if (confirm("Do you want to delete this message?")) {
+        postit.remove();
+      }
+    });
+
+    postitBoard.prepend(postit); // 작성된 메모 맨 위에 추가
   });
 });
