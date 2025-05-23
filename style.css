@@ -482,8 +482,9 @@ a:hover {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 2.5rem; /* 기존보다 살짝 넓힘 */
+  margin-top: 2.5rem;
+  padding: 0 1rem; /* 좌우 여백도 추가 */
 }
 
 .project-card {
