@@ -336,7 +336,7 @@ a:hover {
   width: 100%;
   height: 100vh;
   z-index: 0;
-  background: #0f2027;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 .hero {
@@ -706,4 +706,11 @@ header.guestbook-hero h1 {
   font-size: 18px;
   cursor: pointer;
   color: #333;
+}
+.star-fall {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: white;
+  animation: fall 2s linear infinite;
 }
