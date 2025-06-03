@@ -1,9 +1,8 @@
+You said:
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eunjin Kim | Full Stack Developer</title>
@@ -14,11 +13,7 @@
     />
   </head>
   <body>
-    <div id="particles-js">
-
-</div>
-
-</div>
+    <div id="particles-js"></div>
 
     <header class="hero fade-in">
       <h1>Eunjin Kim (Jin)</h1>
@@ -305,11 +300,42 @@
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS.load('particles-js', '/assets/particles.json', function () {
-    console.log('✨ particles loaded from /assets/particles.json!');
-  });
-</script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+          opacity: { value: 0.4 },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.2,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+          },
+          modes: {
+            grab: { distance: 140, line_linked: { opacity: 0.4 } },
+            push: { particles_nb: 4 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
 
     <!-- 👇 Scroll-triggered fade-in -->
     <script>
@@ -340,5 +366,4 @@
     </script>
     <script type="module" src="script.js"></script>
   </body>
-
 </html>
