@@ -1,8 +1,11 @@
-You said:
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
+    <script
+      src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eunjin Kim | Full Stack Developer</title>
@@ -25,13 +28,27 @@ You said:
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+    </style>
+    <!-- ✅ Firebase SDK (compat 빌드로 변경: v8 스타일 그대로 사용 가능) -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore-compat.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
     <div id="particles-js"></div>
 
     <header class="hero fade-in">
       <h1>Eunjin Kim (Jin)</h1>
-      <p>Full Stack Developer · JavaScript · Node.js · React</p>
+      <p>Full Stack Developer · JavaScript · Node.js · React · Python</p>
       <a href="mailto:lqye92@gmail.com?subject=Hello%20Eunjin" class="hero-btn">
         ✉️ Contact me ↓
       </a>
@@ -64,6 +81,11 @@ You said:
           >📘 View Full README</a
         >
       </div>
+    </section>
+
+    <section id="visitor-map" class="fade-in">
+      <h2 class="visitor-map-title">Portfolio Visitor Map</h2>
+      <div id="map"></div>
     </section>
 
     <section class="skills fade-in">
@@ -372,6 +394,7 @@ You said:
         });
       });
     </script>
-    <script type="module" src="script.js"></script>
+    <!-- ✅ script.js 모듈 제거 -->
+    <script src="script.js"></script>
   </body>
 </html>

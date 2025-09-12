@@ -735,3 +735,26 @@ header.guestbook-hero h1 {
     transform: translateY(0);
   }
 }
+
+#map {
+  height: 400px; /* 반드시 높이를 지정해야 보임 */
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  z-index: 1; /* particles.js 위에 나오도록 */
+}
+.flag-icon {
+  background: none !important; /* 기본 마커 배경 제거 */
+  border: none !important;
+  text-align: center;
+}
+.flag-icon span {
+  font-size: 24px; /* 국기 크기 */
+  line-height: 1;
+}
+
+.visitor-map-title {
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+}
