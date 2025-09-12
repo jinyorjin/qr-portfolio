@@ -707,3 +707,31 @@ header.guestbook-hero h1 {
   cursor: pointer;
   color: #333;
 }
+.visitor-card {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ddd;
+  display: inline-block;
+}
+.visitor-card span {
+  color: #ffcc40;
+  font-weight: bold;
+}
+
+.visitor-card {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

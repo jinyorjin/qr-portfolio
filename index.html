@@ -7,6 +7,20 @@ You said:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eunjin Kim | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K5X20TP798"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K5X20TP798");
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -21,6 +35,10 @@ You said:
       <a href="mailto:lqye92@gmail.com?subject=Hello%20Eunjin" class="hero-btn">
         ✉️ Contact me ↓
       </a>
+      <div class="visitor-card">
+        Total Visitors: <span id="total-visitors">0</span><br />
+        Today Visitors: <span id="today-visitors">0</span>
+      </div>
     </header>
 
     <section id="about" class="about-section fade-in">
@@ -45,7 +63,6 @@ You said:
         <a href="readme.html" target="_blank" class="readme-btn"
           >📘 View Full README</a
         >
-        <a href="guestbook.html" class="hero-btn">📖 View Guestbook</a>
       </div>
     </section>
 
@@ -123,6 +140,31 @@ You said:
       <h2>🧪 Projects</h2>
 
       <!-- 줄 1: GalaxyHabit, WeightTracker, BabyNaps -->
+      <div class="project-nap">
+        <div class="project-card">
+          <img src="assets/happytail.png" alt="HappyTail App" />
+          <h3>HappyTail - Responsive Vue SPA</h3>
+          <p>
+            A responsive single-page application built with Vue 3, Vite,
+            Bootstrap 5, and Pinia. Features include dark mode, text size
+            toggles, interactive pages, and a polished UI designed for SIT120
+            coursework.
+          </p>
+          <a
+            href="https://happytaildeakin.netlify.app/#/"
+            target="_blank"
+            class="project-link"
+            >View Live Demo</a
+          >
+          <a
+            href="https://github.com/jinyorjin/sti120-happytail"
+            target="_blank"
+            class="project-link"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+
       <div class="project-nap">
         <div class="project-card">
           <img src="assets/galaxyhabit.png" alt="GalaxyHabit App" />
