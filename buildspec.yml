@@ -2,15 +2,17 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
     commands:
       - echo Installing dependencies...
-      - npm install # 패키지 설치
+      - npm install
   build:
     commands:
-      - echo Building the React application...
-      - npm run build # React 빌드 명령어 실행
+      - echo Building project...
+      - npm run build
 
 artifacts:
   files:
-    - "**/*" # 빌드 폴더의 모든 파일을 아티팩트로 지정
-  base-directory: build # 아티팩트가 생성되는 폴더(React 기본 설정)
+    - "**/*"
+  base-directory: build
