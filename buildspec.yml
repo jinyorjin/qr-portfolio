@@ -1,5 +1,8 @@
 version: 0.2
 phases:
+  install: # <--- 이 단계를 추가합니다.
+    commands:
+      - echo "Installing placeholder dependencies (no npm needed)"
   build:
     commands:
       - echo "Building static site (no npm)..."
