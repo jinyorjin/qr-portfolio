@@ -7,10 +7,9 @@ phases:
   build:
     commands:
       - echo "Copying public contents to root for deployment"
-      # public 폴더 안의 모든 파일을 CodeBuild 작업 공간 루트로 복사
+
       - cp -r public/* .
       - ls -al
 artifacts:
-  # base-directory를 제거하고 루트의 모든 파일을 아티팩트로 만듭니다.
   files:
     - "**/*"
