@@ -1,14 +1,16 @@
 version: 0.2
 phases:
-  install: # <--- 이 단계를 추가합니다.
+  install:
     commands:
-      - echo "Installing placeholder dependencies (no npm needed)"
+      # 초기화용
+      - echo "Installing placeholder dependencies"
   build:
     commands:
-      - echo "Building static site (no npm)..."
-      - ls
-      - ls public
+      - echo "Copying public contents to root for deployment"
+      # public 폴더 안의 모든 파일을 CodeBuild 작업 공간 루트로 복사
+      - cp -r public/* .
+      - ls -al
 artifacts:
-  base-directory: public
+  # base-directory를 제거하고 루트의 모든 파일을 아티팩트로 만듭니다.
   files:
     - "**/*"
